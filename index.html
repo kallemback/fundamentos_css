@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos do CSS</title>
     <style>
-        [title="Netflix"]{
+        li{
             color: red;
         }
-        [title="PrimeVideo"]{
-            color: blue;
+        li li{
+            color:blue
         }
-        [title="SpotiFy"]{
-            color: green;
+        .terra{
+            color: black;
         }
-        [title~="Streaming"]{
-            background-color: red;
+        .terra{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        [href^="https://"]{
-            background-color: brown;
-
+        .terra2{
+            font-style:italic;
+            font-variant: small-caps;
         }
-
+        #lista{
+            color: brown;
+        }
     </style>
 </head>
 <body>
@@ -31,16 +33,36 @@
     <div>
         <ul>
             <li>
-                <a title="Netflix Streaming" href="https://www.netflix.com" target="_blank">Netflix</a>
+                <div>Item 1</div>
+                <ul>
+                    <li>SubItem 1</li>
+                    <li>SubItem 2</li>
+                    <li class="terra">SubItem 3</li>
+                </ul>
             </li>
             <li>
-                <a title="PrimeVideo Streaming" href="https://www.primevideo.com"target="_blank">Amazon Prime</a>
+                <div>Item 2</div>
+                <ul>
+                    <li>SubItem 1</li>
+                    <li>SubItem 2</li>
+                    <li class="terra">SubItem 3</li>
+                </ul>
             </li>
             <li>
-                <a title="SpotiFy" href="http://www.spotify.com" target="_blank">Spotify</a>
+                <div>Item 3</div>
+                <ul>
+                    <li>SubItem 1</li>
+                    <li>SubItem 2</li>
+                    <li class="terra2">SubItem 3</li>
+                </ul>
             </li>
             <li>
-                <a title="Streaming">"DisneyPlus"</a> 
+                <div>Item 4</div>
+                <ul>
+                    <li>SubItem 1</li>
+                    <li>SubItem 2</li>
+                    <li class="terra2" id="lista">SubItem 3 id</li>
+                </ul>
             </li>
         </ul>
     </div>

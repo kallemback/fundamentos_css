@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos do CSS</title>
+    <style>
+        [title="Netflix"]{
+            color: red;
+        }
+        [title="PrimeVideo"]{
+            color: blue;
+        }
+        [title="SpotiFy"]{
+            color: green;
+        }
+        [title~="Streaming"]{
+            background-color: red;
+        }
+        [href^="https://"]{
+            background-color: brown;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Atrações</h1>
+    <p id="texto-boas-vindas">Bem Vindo!</p>
+    <p id="explicacao-seletores">Selecione a Plataforma</p>
+    <div>
+        <ul>
+            <li>
+                <a title="Netflix Streaming" href="https://www.netflix.com" target="_blank">Netflix</a>
+            </li>
+            <li>
+                <a title="PrimeVideo Streaming" href="https://www.primevideo.com"target="_blank">Amazon Prime</a>
+            </li>
+            <li>
+                <a title="SpotiFy" href="http://www.spotify.com" target="_blank">Spotify</a>
+            </li>
+            <li>
+                <a title="Streaming">"DisneyPlus"</a> 
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
