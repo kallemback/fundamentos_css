@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos do CSS</title>
     <style>
-        
+        [title="Netflix"]{
+            color: red;
+        }
+        [title="PrimeVideo"]{
+            color: blue;
+        }
+        [title="SpotiFy"]{
+            color: green;
+        }
+        [title~="Streaming"]{
+            background-color: red;
+        }
+        [href^="https://"]{
+            background-color: brown;
+
+        }
 
     </style>
 </head>
 <body>
-    <h1>Seletores CSS</h1>
+    <h1>Atrações</h1>
     <p id="texto-boas-vindas">Bem Vindo!</p>
-    <p id="explicacao-seletores">No CSS nós possuímos os seletores por ID</p>
+    <p id="explicacao-seletores">Selecione a Plataforma</p>
     <div>
         <ul>
-            <li class="porTipo textoMaiusculo"><b>Seletor por Tipo:</b>Busca elementos por uma tag HTML específica</li>
-            <li><b>Seletor por ID (#)</b>Busca elementos através do atributo "id"</li>
-            <li class="porTipo textoMaiusculo"><b>Seletor por Classe(.):</b>Busca elementos através do atributo "class"</li>
-            <li><b>Seletor Universal(*):</b>Seleciona todos os elementos HTML </li>
-            <li class="porTipo"><b>Seletor de atributo([atrib]):</b>Busca elementos que possuem um atributo específico em nosso documento HTML e conseguimos também buscar com um valor específico</li>
+            <li>
+                <a title="Netflix Streaming" href="https://www.netflix.com" target="_blank">Netflix</a>
+            </li>
+            <li>
+                <a title="PrimeVideo Streaming" href="https://www.primevideo.com"target="_blank">Amazon Prime</a>
+            </li>
+            <li>
+                <a title="SpotiFy" href="http://www.spotify.com" target="_blank">Spotify</a>
+            </li>
+            <li>
+                <a title="Streaming">"DisneyPlus"</a> 
+            </li>
         </ul>
     </div>
 </body>
